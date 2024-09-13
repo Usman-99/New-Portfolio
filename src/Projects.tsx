@@ -38,7 +38,7 @@ const projects = [
     intro:
       "Developed a personal website to showcase my skills and projects using React JS and Tailwind CSS. This site highlights my expertise in front-end development and responsive design.",
     gitlink: "https://github.com/Usman-99/Portfolio",
-    dlink: "https://usmanportfolio99.netlify.app/",
+    dlink: "https://usmanwebsite99.netlify.app/",
   },
   {
     img: Project6,
