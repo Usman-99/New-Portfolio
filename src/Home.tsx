@@ -1,25 +1,23 @@
-import { useState } from 'react';
 import { motion } from 'framer-motion';
 import {FaDownload } from 'react-icons/fa';
 import pic from "./assets/bgnewpic.jpg";
-import Projects from './Projects';  
 import Resume from "./assets/UsmanResume.pdf"
+// import Projects from './Projects';
 
 export default function Home() {
-  const [showProjects, setShowProjects] = useState(false); // State to toggle between Home and Projects
+  // const [showProjects, setShowProjects] = useState(false); // State to toggle between Home and Projects
 
-  // Handle navigation to Projects
-  const handleViewMyWork = () => {
-    setShowProjects(true);
-    window.scrollTo(0,0)
-  };
+  // // Handle navigation to Projects
+  // const handleViewMyWork = () => {
+  //   setShowProjects(true);
+  //   window.scrollTo(0,0)
+  // };
 
 
-  // Conditional rendering based on state
-  if (showProjects) {
-    return <Projects />; // If showProjects is true, render the Projects component
-  }
-
+  // // Conditional rendering based on state
+  // if (showProjects) {
+  //   return <Projects />; // If showProjects is true, render the Projects component
+  // }
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Updated gradient background */}
@@ -48,7 +46,7 @@ export default function Home() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4 }}
         >
-          Frontend Developer | React Enthusiast
+          Web Developer | React Enthusiast
         </motion.p>
         <motion.div
           className="max-w-xl md:max-w-2xl mx-auto mb-10 md:mb-15 "
@@ -57,20 +55,21 @@ export default function Home() {
           transition={{ delay: 0.6 }}
         >
           <p className="text-sm md:text-base lg:text-lg text-new-white  ">  {/* Text color updated */}
-            I'm a passionate frontend developer, expert in creating beautiful, 
+            I'm a passionate web developer, expert in creating beautiful, 
             responsive, and user-friendly web applications. Specializing in React and modern JavaScript, 
             I love turning complex problems into simple, elegant solutions.
           </p>
         </motion.div>
-        {/* Button to navigate to Projects component */}
-        <motion.button
+
+        {/* <motion.button
           onClick={handleViewMyWork}
           className="mb-10 inline-block bg-white text-blue-600 px-8 py-4 rounded-full font-semibold text-lg hover:bg-blue-100 transition duration-300 shadow-md"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
         >
           View My Work
-        </motion.button><motion.a
+        </motion.button> */}
+        <motion.a
             className="mx-2 rounded-full md:w-auto inline-block bg-blue-600 text-white px-6 py-3 rounded-full font-semibold text-base md:text-lg hover:bg-blue-700 transition duration-300 shadow-md"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}

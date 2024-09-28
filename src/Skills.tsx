@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaGithub ,FaBootstrap,FaPython} from 'react-icons/fa'
-import { SiTailwindcss, SiTypescript ,SiPostman,SiRedux,SiFirebase} from 'react-icons/si'
+import { SiMysql,SiTailwindcss, SiTypescript ,SiPostman,SiRedux,SiFirebase} from 'react-icons/si'
 import { RiNextjsFill } from "react-icons/ri";
 const skills = [
   { name: 'HTML5', icon: FaHtml5, color: 'text-orange-500' },
@@ -10,6 +10,7 @@ const skills = [
   { name: 'Next JS', icon: RiNextjsFill, color: 'text-black' },
   { name: 'TypeScript', icon: SiTypescript, color: 'text-blue-500' },
   { name: 'Postman', icon: SiPostman, color: 'text-orange-500' },
+  { name: 'SQL', icon: SiMysql, color: 'text-blue-500' },
   { name: 'Firebase', icon: SiFirebase, color: 'text-orange-500' },
   { name: 'Redux', icon: SiRedux, color: 'text-violet-600' },
   { name: 'Tailwind CSS', icon: SiTailwindcss, color: 'text-teal-400' },
