@@ -70,7 +70,7 @@ export default function Home() {
           View My Work
         </motion.button> */}
         <motion.a
-            className="mx-2 rounded-full md:w-auto inline-block bg-blue-600 text-white px-6 py-3 rounded-full font-semibold text-base md:text-lg hover:bg-blue-700 transition duration-300 shadow-md"
+            className="mb-4 mx-2 rounded-full md:w-auto inline-block bg-blue-600 text-white px-6 py-3 rounded-full font-semibold text-base md:text-lg hover:bg-blue-700 transition duration-300 shadow-md"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             href={Resume}
