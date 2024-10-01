@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import {FaDownload } from 'react-icons/fa';
-import pic from "./assets/bgnewpic.jpg";
+import pic from "./assets/bgnewpic.webp";
 import Resume from "./assets/UsmanResume.pdf"
 // import Projects from './Projects';
 

@@ -1,12 +1,12 @@
 import { motion } from 'framer-motion'
-import Project1 from "./assets/Capture.jpg";
-import Project2 from "./assets/Capture1.jpg";
-import Project3 from "./assets/Capture2.jpg";
-import Project4 from "./assets/Capture3.jpg";
-import Project5 from "./assets/Capture4.jpg";
-import Project6 from "./assets/Capture5.jpg";
-import Project7 from "./assets/Capture6.jpg";
-import Project8 from "./assets/capture7.jpg"
+import Project1 from "./assets/Capture.webp";
+import Project2 from "./assets/Capture1.webp";
+import Project3 from "./assets/Capture2.webp";
+import Project4 from "./assets/Capture3.webp";
+import Project5 from "./assets/Capture4.webp";
+import Project6 from "./assets/Capture5.webp";
+import Project7 from "./assets/Capture6.webp";
+import Project8 from "./assets/Capture7.webp"
 
 const projects = [
   {
