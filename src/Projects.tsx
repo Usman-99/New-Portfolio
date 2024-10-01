@@ -1,4 +1,6 @@
-import { motion } from 'framer-motion'
+import { motion } from 'framer-motion';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css'; // Optional blur effect
 import Project1 from "./assets/Capture.webp";
 import Project2 from "./assets/Capture1.webp";
 import Project3 from "./assets/Capture2.webp";
@@ -6,7 +8,7 @@ import Project4 from "./assets/Capture3.webp";
 import Project5 from "./assets/Capture4.webp";
 import Project6 from "./assets/Capture5.webp";
 import Project7 from "./assets/Capture6.webp";
-import Project8 from "./assets/Capture7.webp"
+import Project8 from "./assets/Capture7.webp";
 
 const projects = [
   {
@@ -98,19 +100,26 @@ export default function Projects() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
-              <img src={project.img} alt={project.name} className="w-full h-auto object-cover" />
+              <LazyLoadImage
+                src={project.img}
+                alt={project.name}
+                className="w-full h-auto object-cover"
+                effect="blur" // You can use blur, opacity, or none for different loading effects
+              />
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-2 text-new-white">{project.name}</h3>
                 <p className="text-new-white text-lg mb-4">{project.intro}</p>
                 <div className="flex space-x-4">
                   <a
-                    href={project.dlink}target='_blank'
+                    href={project.dlink}
+                    target='_blank'
                     className="inline-block bg-blue-500 text-white px-4 py-2 rounded-full font-medium hover:bg-blue-600 transition duration-300"
                   >
                     View Project
                   </a>
                   <a
-                    href={project.gitlink} target='_blank'
+                    href={project.gitlink}
+                    target='_blank'
                     className="inline-block bg-green-500 text-white px-4 py-2 rounded-full font-medium hover:bg-green-600 transition duration-300"
                   >
                     View Code
