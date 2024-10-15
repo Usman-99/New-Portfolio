@@ -48,5 +48,8 @@
   },
   "devDependencies": {
     "@types/react-lazy-load-image-component": "^1.6.4"
-  }
+  },
+  "engines": {
+  "node": ">=14.0.0"
+}
 }
