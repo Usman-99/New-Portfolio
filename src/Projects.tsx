@@ -123,6 +123,7 @@ export default function Projects() {
                 <p className="text-new-white text-lg mb-4">{project.intro}</p>
                 <div className="flex space-x-4">
                   <a
+                    rel="noreferrer"
                     href={project.dlink}
                     target="_blank"
                     className="inline-block bg-blue-500 text-white px-4 py-2 rounded-full font-medium hover:bg-blue-600 transition duration-300"
@@ -130,6 +131,7 @@ export default function Projects() {
                     View Project
                   </a>
                   <a
+                    rel="noreferrer"
                     href={project.gitlink}
                     target="_blank"
                     className="inline-block bg-green-500 text-white px-4 py-2 rounded-full font-medium hover:bg-green-600 transition duration-300"
